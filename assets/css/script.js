@@ -1,7 +1,5 @@
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("nav .container ul li");
-const inicioLink = document.querySelector("li.page1 a");
-
 window.addEventListener("scroll", () => {
     let current = "";
     sections.forEach((section) => {
@@ -14,16 +12,8 @@ window.addEventListener("scroll", () => {
 
     navLi.forEach((li) => {
         li.classList.remove("active");
-        if (li.classList.contains(current) && li !== inicioLink.parentNode) {
+        if (li.classList.contains(current)) {
             li.classList.add("active");
         }
-    });
-});
-
-inicioLink.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
     });
 });
