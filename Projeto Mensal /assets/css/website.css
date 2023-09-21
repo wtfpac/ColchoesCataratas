@@ -1,0 +1,292 @@
+@import url('https://fonts.cdnfonts.com/css/gotham-6');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+section {
+  scroll-snap-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.containerLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 150px;
+}
+
+.containerLogo img {
+  width: 100%
+}
+
+.caixaLogo {
+  width: 25%;
+}
+.imgLogo{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.colchoes {
+  box-shadow: 3px 5px 5px #202020;
+  font-family: "Tilt Warp";
+  font-size: 80px;
+  text-transform: uppercase;
+  background: #1635ff;
+  background: linear-gradient(to bottom right, #1635ff 0%, #618bff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cataratas {
+  font-family: "Inter Tight";
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: -25px;
+  text-transform: uppercase;
+  letter-spacing: 1.1rem;
+  margin-left: 17px;
+  background: #1635ff;
+  background: linear-gradient(to bottom right, #1635ff 0%, #618bff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#page1 {
+  background-image: url("/website/assets/img/fundo.jpg");
+  background-size: 100%;
+}
+
+#page4 {
+  background-color: rgb(143, 143, 143);
+}
+
+nav {
+  z-index: 99;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.75em;
+  position: fixed;
+  width: 55vw;
+  top: 0;
+  background: white;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  border: 1px solid black;
+  box-shadow: 3px 3px 5px #20202050;
+}
+nav .container {
+  font-family: "Gotham";
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+nav .container ul li {
+  display: inline-block;
+}
+nav .container ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+}
+nav .container ul li.active {
+  transition: 0.3s ease background-color;
+  background: #445dff;
+  box-shadow: 3px 3px 5px #20202050;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+}
+nav .container ul li.active a {
+  color: rgb(255, 255, 255);
+}
+
+.caixaCatalog {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.colchao{
+  text-transform: uppercase;
+  color: #b0baff;
+  filter:brightness(60%) blur(0%);
+  transition: 0.3s;
+  font-family: gotham;
+  font-size: 1.2em;
+  background-position: center;
+  align-items: end;
+  grid-template-rows: 1fr;
+  display: grid;
+  bottom: 0;
+  overflow: hidden;
+  background-size: 100%;
+  text-align: center;
+}
+#c1:hover .texto1{
+  transform: translateY(0);
+  background-image: linear-gradient(0, #000000a8, #00000047, #2a2a2a00);
+}
+#c1:hover {
+  filter:brightness(100%);
+}
+#c2:hover .texto2{
+  transform: translateY(0);
+  background-image: linear-gradient(0, #000000a8, #00000047, #2a2a2a00);
+}
+#c2:hover {
+  filter:brightness(100%);
+}
+#c3:hover .texto3{
+  transform: translateY(0);
+  background-image: linear-gradient(0, #000000a8, #00000047, #2a2a2a00);
+}
+#c3:hover {
+  filter:brightness(100%);
+}
+#c4:hover .texto4{
+  transform: translateY(0);
+  background-image: linear-gradient(0, #000000a8, #00000047, #2a2a2a00);
+}
+#c4:hover {
+  filter:brightness(100%);
+}
+.texto {
+  transform: translateY(75%);
+  transition: .3s;
+}
+
+.texto h2 {
+  margin-bottom: 100px;
+}
+#c1{
+  background-image: url("/website/assets/img/cama2.webp");
+}
+#c2{
+  background-image: url("/website/assets/img/cama1.webp");
+}
+#c3{
+  background-image: url("/website/assets/img/cama3.webp");
+}
+#c4{
+  background-image: url("/website/assets/img/cama4.webp");
+}
+
+.conteinerMapa {
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(35deg, rgb(28, 28, 28) 0%, rgb(39, 39, 39) 65%, rgb(58, 58, 58) 100%);
+  display: grid;
+  grid-template-rows: 75% 25%;
+  padding: 70px 0px 0px 0px;
+  position: relative;
+}
+.mapa {
+  background-image: url(/website/assets/img/mapa.png);
+  background-size: 100%;
+  width: 100%;
+  position: relative;
+}
+.contato {
+  color: black;
+  background-color: white;
+  padding-left: 50px;
+  padding-right: 10px;
+  font-family: gotham;
+  font-size: 50px;
+  text-transform: uppercase;
+  bottom: 20%;
+  position: absolute;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.infoFooter {
+  justify-content: center;
+  width: 35%;
+  height: 80%;
+  position: absolute;
+  right: 5%;
+  background-color: white;
+  bottom: 0;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.form {
+  margin-top: 20px;
+  font-family: gotham;
+  display: flex;
+  justify-content: center;
+}
+.infoFooter input {
+  display:block;
+  width: 80%;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.infoFooter input:nth-last-child(2):hover {
+  height: 150px;
+  transition: 0.3s;
+}
+
+.enviar {
+  width: 20%;
+  height: 25px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  color: black;
+  font-family: gotham;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 20px;
+  border: 3px solid black;
+  box-shadow: 3px 3px 5px #20202050;
+  margin-top: 50px;
+}
+
+.footer{
+  justify-content: center;
+}
+.footer h3{
+  font-family: gotham;
+  font-size: 15px;
+  font-weight: 200;
+  color: white;
+  margin: 20px;
+  margin-left: 10%;
+}
+
+.conteinerFoto {
+  background-image: url(/website/assets/img/fabrica.jpg);
+  
+}

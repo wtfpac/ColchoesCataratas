@@ -1,0 +1,54 @@
+@import url('https://fonts.cdnfonts.com/css/gotham-6');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.lateral-esquerda {
+    background-color: rgb(85, 64, 246);
+    color: #fff;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.botoes {
+    margin-top: 20px;
+}
+.botao {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+    width: 85%;
+    display: block;
+}
+.botao:hover {
+    background-color: #f0f0f0;
+}
+.conteudo {
+    flex-grow: 1;
+    padding: 10px;
+}
+.lateral-direita {
+    background-color: #f0f0f0;
+    width: 50px; /* Largura da lateral direita */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio {
+    font-size: 50px;
+    color: #333; 
+}
+
