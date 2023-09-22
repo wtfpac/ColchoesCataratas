@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColchoesCataratas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #007bff, #fff);
+            font-family: Arial, sans-serif;
+            height: 100vh;
+        }
+
+        .header {
+            background-color: #007bff3d;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 5px;
+        }
+
+        .sidebar {
+            background-color: #fff;
+            color: #fff;
+            width: 20%;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+
+        .content {
+            background-color: #fff;
+            width: 80%; 
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            flex: 1;
+            margin-right: 90px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 60px;
+        }
+
+        .results {
+            border: 1px solid #ccc;
+            padding: 150px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Gestão de Estoque</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="button-container">
+                <button class="button">Novo Item</button>
+                <button class="button">Editar Item</button>
+                <button class="button">Remover Item</button>
+                <button class="button">Relatório</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Pesquisar por nome">
+                <input type="text" class="search-input" placeholder="Pesquisar por código">
+                <input type="text" class="search-input" placeholder="Pesquisar por fornecedor">
+            </div>
+            <div class="results">
+            
