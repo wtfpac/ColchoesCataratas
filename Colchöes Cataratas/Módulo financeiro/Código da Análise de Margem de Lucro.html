@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Margem de Lucro</title>
+    <style>
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-photo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background-color: #fff;
+        }
+
+        .settings-icon {
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .settings-dropdown {
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: none;
+            flex-direction: column;
+            z-index: 1;
+        }
+
+        .settings-dropdown a {
+            padding: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .settings-dropdown a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .settings-icon:hover {
+            color: #ff9900;
+        }
+
+        .analysis-container {
+            padding: 20px;
+        }
+
+        .analysis-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .analysis-content {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .input-label {
+            font-weight: bold;
+        }
+
+        .input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .analyze-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="user-info">
+            <div class="user-photo"></div>
+            <div>Nome do Usuário</div>
+        </div>
+        <div class="settings-icon" onclick="toggleSettingsDropdown()">&#9881;</div>
+        <div class="settings-dropdown" id="settingsDropdown">
+            <a href="#">Abrir Configurações</a>
+            <a href="C:\Users\Kaiky\Desktop\Módulo financeiro\Código do módulo Financeiro.html">Módulo financeiro</a>
+            <a href="#">Deslogar</a>
+        </div>
+    </div>
+    <div class="analysis-container">
+        <h1 class="analysis-title">Análise de Margem de Lucro</h1>
+        <div class="analysis-content">
+            <div class="input-field">
+                <label class="input-label">Produto</label>
+                <input class="input" type="text" value="Produto A">
+            </div>
+            <div class="input-field">
+                <label class="input-label">Custo de Produção</label>
+                <input class="input" type="text" value="5000">
+            </div>
+            <div class="input-field">
+                <label class="input-label">Preço de Venda</label>
+                <input class="input" type="text" value="7500">
+            </div>
+            <button class="analyze-button">Analisar</button>
+        </div>
+    </div>
+
+    <script>
+        var dropdownVisible = false;
+
+        function toggleSettingsDropdown() {
+            var dropdown = document.getElementById("settingsDropdown");
+            dropdownVisible = !dropdownVisible;
+            dropdown.style.display = dropdownVisible ? "flex" : "none";
+        }
+    </script>
+</body>
+
+</html>
