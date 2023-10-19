@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo Financeiro</title>
+    <style>
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-photo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background-color: #fff;
+        }
+
+        .settings-icon {
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .settings-dropdown {
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: none;
+            flex-direction: column;
+            z-index: 1;
+        }
+
+        .settings-dropdown a {
+            padding: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .settings-dropdown a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .settings-icon:hover {
+            color: #ff9900;
+        }
+
+        .name {
+            height: 25px;
+            text-align: center;
+        }
+
+        .menu {
+            justify-content: space-between;
+            padding: 25px;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            flex-basis: calc(33.33% - 20px);
+            margin-bottom: 10px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .menu-item a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .menu-item:hover {
+            background-color: #0669d393;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="user-info">
+            <div class="user-photo"></div>
+            <div>Nome do Usuário</div>
+        </div>
+        <div class="settings-icon" onclick="toggleSettingsDropdown()">&#9881;</div>
+        <div class="settings-dropdown" id="settingsDropdown">
+            <a href="#">Abrir Configurações</a>
+            <a href="C:\Users\Kaiky\Desktop\Módulo financeiro\Código do módulo Financeiro.html">Módulo financeiro</a>
+            <a href="#">Deslogar</a>
+        </div>
+    </div>
+    <div class="name">
+        <h1>Módulo Financeiro</h1>
+    </div>
+    <div class="menu">
+        <div class="menu-item">
+            <a href="C:\Users\Kaiky\Desktop\Módulo financeiro\Código do relatório financeiro.html">
+                <h2>Relatório Financeiro</h2>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="C:\Users\Kaiky\Desktop\Módulo financeiro\Código da Análise de Margem de Lucro.html">
+                <h2>Análise de Margem de Lucro</h2>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a href="C:\Users\Kaiky\Desktop\Módulo financeiro\Código do relatório de imposto.html">
+                <h2>Relatório de Impostos</h2>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        var dropdownVisible = false;
+
+        function toggleSettingsDropdown() {
+            var dropdown = document.getElementById("settingsDropdown");
+            dropdownVisible = !dropdownVisible;
+            dropdown.style.display = dropdownVisible ? "flex" : "none";
+        }
+    </script>
+</body>
+
+</html>

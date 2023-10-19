@@ -79,7 +79,7 @@ nav {
   font-weight: 500;
   font-size: 0.75em;
   position: fixed;
-  width: 35vw;
+  width: 55vw;
   top: 0;
   background: white;
   left: 0;
@@ -311,5 +311,5 @@ nav .container ul li.active a {
   font-family: Nunito Sans;
   color: white;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 17px;
 }
