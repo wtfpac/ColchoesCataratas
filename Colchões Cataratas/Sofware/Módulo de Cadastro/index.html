@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de funcionários</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="center-title">Cadastro de funcionário</h2>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite o e-mail" required>
+            </div>
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite o CPF" required>
+            </div>
+            <div class="form-group">
+                <label for="rg">RG:</label>
+                <input type="text" id="rg" name="rg" placeholder="Digite o RG" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Digite o endereço" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Cargo:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite o cargo" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+        <h2 class="center-title">Funcionários Cadastrados</h2>
+        <ul>
+            <li>
+                <div class="info">
+                    <span><strong>Nome:</strong> João</span><br>
+                    <span><strong>E-mail:</strong> joao@example.com</span><br>
+                    <span><strong>CPF:</strong> 123.456.789-00</span>
+                </div>
+                <div class="buttons">
+                    <button class="btn-excluir"><i class="fas fa-trash"></i> Excluir</button>
+                    <button class="btn-atualizar"><i class="fas fa-edit"></i> Atualizar</button>
+                    <button class="btn-visualizar"><i class="fas fa-eye"></i> Visualizar</button>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <span><strong>Nome:</strong> Maria</span><br>
+                    <span><strong>E-mail:</strong> maria@example.com</span><br>
+                    <span><strong>CPF:</strong> 987.654.321-00</span>
+                </div>
+                <div class="buttons">
+                    <button class="btn-excluir"><i class="fas fa-trash"></i> Excluir</button>
+                    <button class="btn-atualizar"><i class="fas fa-edit"></i> Atualizar</button>
+                    <button class="btn-visualizar"><i class="fas fa-eye"></i> Visualizar</button>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <span><strong>Nome:</strong> josé</span><br>
+                    <span><strong>E-mail:</strong> josé@example.com</span><br>
+                    <span><strong>CPF:</strong> 425.654.321-42</span>
+                </div>
+                <div class="buttons">
+                    <button class="btn-excluir"><i class="fas fa-trash"></i> Excluir</button>
+                    <button class="btn-atualizar"><i class="fas fa-edit"></i> Atualizar</button>
+                    <button class="btn-visualizar"><i class="fas fa-eye"></i> Visualizar</button>
+                </div>
+            </li>
+            <li>
+                <div class="info">
+                    <span><strong>Nome:</strong> katia</span><br>
+                    <span><strong>E-mail:</strong> katia@example.com</span><br>
+                    <span><strong>CPF:</strong> 987.000.234-00</span>
+                </div>
+                <div class="buttons">
+                    <button class="btn-excluir"><i class="fas fa-trash"></i> Excluir</button>
+                    <button class="btn-atualizar"><i class="fas fa-edit"></i> Atualizar</button>
+                    <button class="btn-visualizar"><i class="fas fa-eye"></i> Visualizar</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
