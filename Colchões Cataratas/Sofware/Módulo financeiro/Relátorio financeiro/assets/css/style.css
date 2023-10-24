@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
+    background-color: #c5e2fc;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,6 +28,7 @@ a.module-link.back-button {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
+    margin-top: 15px;
 }
 
 a.module-link.back-button:hover {
