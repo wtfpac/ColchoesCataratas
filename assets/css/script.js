@@ -17,3 +17,13 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+function redirectToCatalog() {
+    window.location.href = "catalogo.html";
+}
+
+const enviarBtn = document.getElementById("enviarBtn");
+
+function enviarEmail() {
+    alert("Email enviado com sucesso!");
+}

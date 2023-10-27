@@ -36,25 +36,25 @@
     </section>
     <section id="page2">
         <div class="caixaCatalog">
-            <div class="colchao" id="c1">
+            <div class="colchao" id="c1" onclick="redirectToCatalog()">
                 <div class="texto1 texto">
                     <h2>Híbrido</h2>
                     <p>O colchão híbrido é a fusão perfeita entre molas e espuma, proporcionando conforto excepcional e suporte personalizado para um sono revitalizante.</p>
                 </div>
             </div>
-            <div class="colchao" id="c2">
+            <div class="colchao" id="c2" onclick="redirectToCatalog()">
                 <div class="texto2 texto">
                     <h2>Espuma envolta</h2>
                     <p>O colchão de espuma envolta oferece conforto aconchegante com sua camada de espuma que abraça o corpo, proporcionando noites de sono relaxantes.</p>
                 </div>
             </div>
-            <div class="colchao" id="c3">
+            <div class="colchao" id="c3" onclick="redirectToCatalog()">
                 <div class="texto3 texto">
                     <h2>Dupla face</h2>
                     <p>O colchão dupla face oferece versatilidade, permitindo virar e escolher entre diferentes níveis de firmeza para atender às suas necessidades de sono.</p>
                 </div>
             </div>
-            <div class="colchao" id="c4">
+            <div class="colchao" id="c4" onclick="redirectToCatalog()">
                 <div class="texto4 texto">
                     <h2>Uma face</h2>
                     <p>O colchão de uma face é prático e simples, projetado com uma superfície confortável para um descanso tranquilo e sem complicações.</p>
@@ -62,6 +62,7 @@
             </div>
         </div>
     </section>
+
     <section id="page4">
         <div class="conteinerSobre">
             <div class="foto"></div>
@@ -80,7 +81,7 @@
                 <input type="text" placeholder="E-mail">
                 <input type="text" placeholder="Nome da empresa">
                 <input type="text" placeholder="Mensagem">
-                <button class="enviar">Enviar</button>
+                <button class="enviar" id="enviarBtn" onclick="enviarEmail()">Enviar</button>
             </div>
             <div class="footer">
                 <h3>Avenida das Cataratas, 1753</h3>

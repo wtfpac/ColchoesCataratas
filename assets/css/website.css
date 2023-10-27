@@ -255,6 +255,7 @@ nav .container ul li.active a {
   transition: 0.3s;
 }
 
+
 .enviar {
   width: 20%;
   height: 25px;
@@ -271,6 +272,9 @@ nav .container ul li.active a {
   margin-top: 50px;
 }
 
+.enviar:hover {
+  cursor: pointer;
+}
 .footer{
   justify-content: center;
 }
